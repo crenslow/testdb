@@ -1,0 +1,29 @@
+11/8/20
+    We meet over a zoom meeting to discuss our plan. Chris helped me with a small problem causing me not 
+to be able to use node.js. I hadn't installed a couple node modules dependencies. After the meeting I set up 
+framework for the page.
+
+11/10/20
+    Worked on the formating after Chris added the ability to search and display statistics of artists.
+
+11/13/20
+    Implemented album list.
+
+11/19/20
+    Implementing the track list to show and hide when clicking on the album took awhile. Eventually I figured it out.
+The related artists list was implemented shortly after. I tried to do some animations with it using javascript but it
+didn't work. Related artists when clicked on will go to their page.
+
+11/21/20 - 11/22/20
+    Added the functionality for the genre's of albums to be added to the genre pie chart but after implmenting it
+I learned that the Spotify API doesn't use the genre field that is returned when you get an albums info. 
+I tested the function by using an array of strings and it worked then so if Spotify ever ever does use the genre 
+field for albums it would work.
+
+11/23/20
+    Adjusted index.html so that the "Music Statistics Dashboard" shows before people login. The search button doesn't show up
+until after the user logs in. Made it so that Ed Sheeran is the artist displayed when first loaded. Also made it so that when
+the page is reloaded the artist that was currently displayed. Had to look up how to use cookies.
+
+11/24/20
+    Fixed some accessibility issues. Such as contrast, labels, and alt-text. Also made css changes.

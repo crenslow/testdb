@@ -1,0 +1,18 @@
+11-04-20
+    Created login page/authorization for spotify's API. Used thier API examples that can
+    be found on Spotify's API documentation website. Attempted to create a differnt type of
+    authorization page, but decided to stick with the one that had an example to save time.
+11-08-20
+    Had a team meeting to discuss the app, added a style sheet so we could begin styling the layout
+    of the page.
+
+11-10-20
+    Got some initial API calls working and created a chart that shows an artists genres.
+    Also implemented the static stats that we wanted to have.
+
+11-13-20
+    Created a bar chart of songs per album on a different branch.
+11-14-20
+    Added the bar chart to the layout, created a footer and extra text for the popularity index description
+    I tried to create a way to naviagte through different graphs, but Google Charts doesn't like when you
+    try to fill data when the container is hidden.

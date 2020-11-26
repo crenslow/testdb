@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang = "en">
+
+<head>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+  <title>Music Stats Dashboard</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400&display=swap" rel="stylesheet"> 
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+  <div>
+    <!-- This is what the page is before you log in.-->
+
+    <div id="search-bar" class="row" id="row-1">
+      <!--The name of the dashboard is displayed here-->
+      <div class="col-6">
+        <h1>Music Statistics Dashboard</h1>
+      </div>
+
+      <!--This div holds the search input-->
+      <div class="col-6" id="search-section">
+        <input type="text" id="artist-name" placeholder="Search for an artist" aria-label="artist search input">
+        <input type="button" name="search" value="Search" id="search" >
+      </div>
+    </div>
+
+    <div id="login">
+      <div id = "login-btn">
+        <h1>Music Stats Dashboard</h1>
+        <a href="/login" class="btn btn-primary">Please log in with Spotify</a>
+      </div>
+      
+      <footer>
+        <p>Created by Catriona McKay and Christopher Renslow</p>
+      </footer>
+
+    </div>
+
+
+    <!-- This is what the page is after you log in.-->
+    <div id="loggedin" class="container-fluid">
+      
+
+
+
+
+
+
+      <!--This is where the statitics about the artist will be displayed.-->
+      <div class="row" id="row-3">
+        <!--This div will be where the graphs are displayed-->
+        <!--The graphs are not shown on xs screen sizes(mobile)-->
+        
+        <div id="graphs" class="d-none  d-sm-block col-sm-6">
+          
+
+
+        </div>
+
+
+        
+        <!--This div will show the picture of the artists and their songs/albums-->
+        <div class="col-12 col-sm-3" id = "artist-info">
+          <div class="row pic-album">
+            <div id="picture" class="col-12">
+            <!--This is where the artist name will be displayed-->
+              <p id="artist"></p>
+              <img src="" alt="pic of artist" id="ArtistPic"></div>
+          </div>
+          <div class="row pic-album">
+            <div id="albums" class="col-12">
+              <h1>Album List:</h1>
+            </div>
+          </div>
+        </div>
+
+        <!--This div shows the stats not related to the graphs-->
+        <div id="static-stats" class="col-12 col-sm-3">
+          <div class="row stat-row">
+
+            <div class="col-6 col-sm-12 stat">
+              <h1 id="fol"></h1>
+              <h2>Followers</h2>
+            </div>
+
+            <div class="col-6 col-sm-12 stat">
+              <h1 id="pop"></h1>
+              <h2>Popularity Index*</h2>
+            </div>
+
+            <div class="col-6 col-sm-12 stat">
+              <h1 id="songs"></h1>
+              <h2>Song(s)</h2>
+            </div>
+
+            <div class="col-6 col-sm-12 stat">
+              <h1 id="alb"></h1>
+              <h2>Album(s)</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none  d-sm-block " id="graphnav">
+        <input id="graphnavbut" type="button" value="Cycle Graphs" >
+      </div>
+      
+      <!--This is where the related artists will be displayed.-->
+      <div id="related-artists" class="row">
+        <div class="col-12">
+          <p>Related artists here</p>
+        </div>
+      </div>
+
+      <footer>
+        <a href="https://github.com/catrionamckay/Music-Statistics-Dashboard" id="gitlink"> Created by Catriona McKay and Christopher Renslow</a>
+        <p id="PIDescription">*The popularity of the artist.
+          The value will be between 0 and 100, with 100 being the most popular.
+          The artist’s popularity is calculated from the popularity of all the artist’s tracks.</p>
+      </footer>
+    </div>
+  </div>
+
+
+
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="login.js">
+  </script>
+</body>
+
+</html>
